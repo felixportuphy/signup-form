@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container ">
+      <div class="header">
+          <h2>Create Account</h2>
+          <h4>Already Have an Account<a class="sign-in"> Sign In</a></h4>
+           <div class="user-type" >
+            <input type="submit" name="admin" value="Admin"  id="admin" class="account-type">
+            <input type="submit" name="user" value="User" id="user" class="account-type">
+         
+         
+        </div>
+      </div>
+      <form action="/" class="forms " id="form" >
+        <div class="row ">
+            <label for="">Username</label>
+            <input type="text" name="username" placeholder="Username" id="username">
+            <i class="fas fa-check-circle" id="fa-check"></i>
+            <i class="fas fa-exclamation-circle" id="fa-ex"></i>
+            <small>Error Message</small>
+        </div>
+        <div class="row ">
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Email" id="email">
+            <i class="fas fa-check-circle" id="fa-check"></i>
+            <i class="fas fa-exclamation-circle" id="fa-ex"></i>
+            <small>Error Message</small>
+        </div>
+      
+        <div class="row">
+            <label for="">Password</label>
+            <input type="password" name="Password" placeholder="Password" id="password">
+            <i class="fas fa-check-circle" id="fa-check"></i>
+            <i class="fas fa-exclamation-circle" id="fa-ex"></i>
+            <small>Error Message</small>
+        </div>
+        <div class="row">
+            <label for="">Confirm Password</label>
+            <input type="password" name="confirm-pass" placeholder="Password" id="confirm-pass">
+            <i class="fas fa-check-circle" id="fa-check"></i>
+            <i class="fas fa-exclamation-circle" id="fa-ex"></i>
+            <small>Error Message</small>
+        </div>
+       
+            <button>Submit</button>
+       
+      </form>
+
+     
+    </div>
+    <div class="success-wrapper hidden">
+        <h1 class="success-message ">
+           Submission  Successfully 
+        </h1>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
